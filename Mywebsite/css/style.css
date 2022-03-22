@@ -20,3 +20,36 @@ li a:hover {
           height: 500px;
       
   } */
+
+  .carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: rgb(0, 0, 0); /* Fallback color */
+background: rgba(0, 0, 0, 0.062);
+}
+  
+  .caption{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    z-index: 20;
+    background: rgb(0, 0, 0); /* Fallback color */
+background: rgba(0, 0, 0, 0.5);
+  }
+
+  .machinery{
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    z-index: 20;
+    background: rgb(0, 0, 0); /* Fallback color */
+background: rgba(0, 0, 0, 0.63);
+  }
+
+  
+
+  .overview{
+    background: rgb(0, 0, 0); /* Fallback color */
+background: rgba(0, 0, 0, 0.164);
+  }
