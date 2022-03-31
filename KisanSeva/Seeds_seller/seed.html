@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Seller Registration</title>
+</head>
+<body>
+    <div class="content-section">
+        <div class="container">
+                <div class="commodity-header" style="text-align: center; border-color:rgb(18, 92, 8);background-color: rgb(18, 92, 8); color:white !important; padding: 5px 7px ">
+                    Kisan Seva Registration Form</div>  
+                <div class="langwrap">
+                    <a href="agriculture_hindi.html" language='hindi'>हिन्दी</a>
+                    <a href="agriculture_punjabi.html" language='punjabi'>ਪੰਜਾਬੀ</a>
+                </div>
+                <div class="row" class="container">
+                    <form action="admin_register.php" id="register" method="post">
+                        <br>
+                        <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+                        <br>
+                        <fieldset>
+                            <legend><h3 class="title1">Manufacturer Details</h3></legend>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Manufacturer Name<span style="color: rgb(255, 0, 0);">*</span>:</label>
+                                        <input type="text" class="form-control" name="manufacturername" id="manufacturername" required>
+                                        <br>
+                                    </div>
+                                    <div class="col">                              
+                                    <label>Choose Category<span style="color: rgb(255, 0, 0);">*</span>:</label>
+                                    <select name="category" id="category" class="form-control">
+                                        <option value="seed" selected>Seed</option>
+                                    </select>
+                                    </div>
+                                    
+                                </div>
+                            </div>  
+                            <div class="row">
+                                <fieldset>
+                                    <legend><h5>Contact Details</h5></legend>
+                                    <div class="row">
+                                    <div class="col">
+                                        <label>Telephone No.<span style="color: rgb(255, 0, 0);">*</span>:</label>
+                                        <input type="number" name="TelephoneNumber" id="TelephoneNumber" class="form-control" required>
+                                    </div>
+                                    <div class="col">
+                                        <label>Phone No.<span style="color: rgb(255, 0, 0);">*</span>:</label>
+                                        <input type="number" name="PhoneNumber" id="PhoneNumber" class="form-control" required>
+                                    </div>
+                                    <div class="col">
+                                        <label>Customer Care<span style="color: rgb(255, 0, 0);">*</span>:</label>
+                                        <input type="number" name="CustomerCare" id="CustomerCare" class="form-control" required>
+                                    </div>
+                                    </div>
+                                </fieldset>  
+                                <fieldset>
+                                    <br>
+                                    <!--Address-->
+                                    <legend><h5>Location</h5></legend>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="State">State<span style="color: rgb(255, 0, 0);">*</span>:</label>
+                                            <select name="State" id="State" class="form-control">
+                                                <option value="">--Select--</option>
+                                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                <option value="Assam">Assam</option>
+                                                <option value="Bihar">Bihar</option>
+                                                <option value="Chandigarh">Chandigarh</option>
+                                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                                <option value="Daman and Diu">Daman and Diu</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="Ladakh">Ladakh</option>
+                                                <option value="Lakshadweep">Lakshadweep</option>
+                                                <option value="Puducherry">Puducherry</option>
+                                                <option value="Goa">Goa</option>
+                                                <option value="Gujarat">Gujarat</option>
+                                                <option value="Haryana">Haryana</option>
+                                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                <option value="Jharkhand">Jharkhand</option>
+                                                <option value="Karnataka">Karnataka</option>
+                                                <option value="Kashmir">Kashmir</option>
+                                                <option value="Kerala">Kerala</option>
+                                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                <option value="Maharashtra">Maharashtra</option>
+                                                <option value="Manipur">Manipur</option>
+                                                <option value="Meghalaya">Meghalaya</option>
+                                                <option value="Mizoram">Mizoram</option>
+                                                <option value="Nagaland">Nagaland</option>
+                                                <option value="Odisha">Odisha</option>
+                                                <option value="Punjab">Punjab</option>
+                                                <option value="Rajasthan">Rajasthan</option>
+                                                <option value="Sikkim">Sikkim</option>
+                                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                                <option value="Telangana">Telangana</option>
+                                                <option value="Tripura">Tripura</option>
+                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                <option value="Uttarakhand">Uttarakhand</option>
+                                                <option value="West Bengal">West Bengal</option>
+                                              </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="City">City<span style="color: red;">*</span>:</label>
+                                            <input type="text" id="City" name="City" class="form-control" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="PINCode">PIN Code<span style="color: red;">*</span>:</label>
+                                            <input type="number" id="PINCode" name="PINCode" class="form-control" required>                                    
+                                        </div>
+                                    </div>
+                                    <div class="form-group"> 
+                                        <label for="Address">Address<span style="color: red;">*</span>:</label>
+                                        <input type="text" class="form-control" id="Address" name="Address" required>
+                                    </div>
+                                </fieldset>
+                            </div>    
+                        </fieldset>
+                        
+                        <fieldset>
+                            <br>
+                            <legend><h3>Identification</h3></legend>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="inputAuthentication">Authentication No.<span style="color: red;">*</span>:</label>
+                                    <input type="number" required id="inputAuthentication" name="AuthenticationNo" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputLicense">License No.<span style="color: red;">*</span>:</label>
+                                    <input type="number" required id="inputLicense" name="LicenseNo" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="inputIncomeTaxNo">Income Tax No.<span style="color: red;">*</span>:</label>
+                                    <input type="text" id="inputIncomeTaxNo" name="IncomeTaxNo" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <label for="inputEmail">Email<span style="color: red;">*</span>:</label>
+                                    <input type="text" required id="inputEmail" name="Email" class="form-control">
+                                </div>
+                            </div>
+                            <fieldset>
+                                <br>
+                                <legend>
+                                    <h3>Set Password</h3>
+                                </legend>
+                                <div class="row col-6">
+                                    <label for="inputpassword">Password<span style="color:red;">*</span></label>
+                                    <input type="password" required id="input password" class="form-control" name="password">
+                                </div>
+                                <div class="row col-6">
+                                    <label for="inputConfirmpassword">Confirm Password<span style="color:red;">*</span></label>
+                                    <input type="password" required id="input Confirm password" class="form-control" name="confirm_password">
+                                        
+                                </div>
+                                <br>
+                                <div class="row col-4">
+                                    <button id="submit" type="submit" class="form-control" style="text-align: center; background: rgb(18, 92, 8);color: white;">Register</button>
+                                </div>
+                                
+                            </fieldset>
+                        </fieldset>
+                        <br>
+                    </form>     
+                </div>
+        </div>
+    </div>
+</body>
+</html>

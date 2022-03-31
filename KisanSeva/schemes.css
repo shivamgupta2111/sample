@@ -1,0 +1,16 @@
+#allindia,#state{
+    height: 500px;
+    border-radius: 10px;
+}
+#schemelink{
+    width: 50%;
+    height: auto;
+}
+.aside{
+    width: 40%;
+    float: right;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    height: 50px;
+}

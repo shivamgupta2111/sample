@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+           .nav{
+    margin-top: 45px;
+    
+     } 
+     .header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+  }
+li a {
+  font-size: small;
+    display: block;
+    color: #000;
+    /* padding: 8px 16px; */
+    text-decoration: none;
+  }
+  /* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+  }
+  .lang{
+    position: fixed;
+    margin-top: 150px;
+  }
+    </style>
+    <title>Kisan Sewa-Fertilizers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="w3-display-container" bg-dark>
+          <h1 class="text-center bg-success text-white fixed-top">Kisan Seva</h1>
+          <!-- <a class="container" href="#">
+          <img src="Image\86accbea31b719dea35425f4e260b2c3.jpg" class="rounded-circle float-start" width="60" height="60">
+          </a> -->
+          <!-- <img src="Image\86accbea31b719dea35425f4e260b2c3.jpg" class="rounded-circle float-start" width="60" height="60"> -->
+        </div>
+        </section>
+        
+        <section>
+        <div>
+          <br>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light nav fixed-top">
+          
+              <div class="container-fluid">
+                  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <!-- <div class="container-fluid"> -->
+                      <a class="navbar-brand" href="#">
+                        <img src="Image\86accbea31b719dea35425f4e260b2c3.jpg" alt="Logo" style="width:50px;"
+                              class="rounded-pill">
+                      </a>
+        
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html"><i
+                                      class="fa fa-fw fa-home"></i>home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page"
+                                  href="Crop Information.html">Crop Information</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="Farm Machinery.html">Farm
+                                  Machinery</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page"
+                                  href="IndexOrganic.html">organic Faming</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="seeds.html">Seeds</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page"
+                                  href="Fertilizers.html">Fertilizers</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page"
+                                  href="Government Schemes.html">Government Schemes</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="Water supply.html">Water
+                                  Supply</a>
+                          </li>
+        
+        
+        
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="indexLivestock.html">Live Stock</a>
+                        </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="Mandi rate.html">Mandi
+                                  rate</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="Sell.html">Sell</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="Purchase.html">Puchase</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="ExpertProfile\index.html"><i
+                                      class="fa fa-fw fa-user"></i>Expert Advise</a>
+                          </li>
+                          
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="qa\index.php">QA</a>
+                      </li>
+                          <!-- <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Manufacturers.html">Manufacturers</a>
+                          </li> -->
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="Support.html"><i
+                                      class="fa fa-fw fa-headphones"></i>Support</a>
+                          </li>
+                        
+        
+        
+                      </ul>
+                      <!-- </div> -->
+        
+                  </div>
+              </div>
+              <!-- Search -->
+         <nav class="navbar navbar-light bg-light justifiy-content-between">
+          <div class="container">
+              
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              </div>
+            </nav>
+          </nav>
+          
+        </div>
+        </section>
+      
+        <!-- Language -->
+        <section class="bg-success text-light p-3 fixed-top lang">
+          <div class="container">
+            <div class="langwrap">
+              <a href="#" language='english'>EN</a>
+              <a href="Index(hindi).html" language='hindi'>
+                हिन्दी</a>
+               
+            </div>
+          </div>
+          </section>
+      
+   
+    <!-- showcase -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+          <div class="container">
+              <div class="d-sm-flex align-items-center justify-content-between">
+                  <div>
+                      <h1>Types of <span class="text-warning">Fertilizers</span></h1>
+                      <p class="lead my-3">There are  four different classes of Fertilizers in India namely inorganic fertilizers, organic fertilizers, nitrogen fertilizers, phosphorous fertilizers.</p>
+                      <button class="btn btn-primary btn-lg mx-1" 
+                      data-bs-toggle="modal" 
+                      data-bs-target="#enroll">
+                          Start learning
+                      </button>
+                  </div>
+                  <img class="img-fluid w-50 d-none d-sm-block mt-5" src="https://www.fertilizer-machine.net/wp-content/uploads/2018/06/types-of-fertilizer.jpg" alt="">
+              </div>
+          </div>
+    </section>
+    <!--newsletter-->
+   
+    <!--boxes-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Inorganic Fertilizers
+                            </h3>
+                            <p class="card-text">
+                                suuuuuuiiii
+                            </p>
+                            <a href="#" class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Organic Fertilizers
+                            </h3>
+                            <p class="card-text">
+                                suuuuuuuiii
+                            </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Nitrogen Fertilizers
+                            </h3>
+                            <p class="card-text">
+                                suuuuuiiiii
+                            </p>
+                            <a href="#" class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Phosphorous Fertilizers
+                            </h3>
+                            <p class="card-text">
+                                suuuuuuuuiii
+                            </p>
+                            <a href="#" class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Learn Section-->
+    <section id="learn" class="p-5 bg-success">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="https://www.ugaoo.com/knowledge-center/wp-content/uploads/2017/07/shutterstock_301313486.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn the fundamentals</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore quibusdam veniam beatae enim nemo ea possimus. Magni excepturi aliquam quasi aspernatur harum fuga laborum, perspiciatis impedit delectus, nam ipsam.
+                    </p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem id veritatis repellendus. Neque, officiis.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>More About Fertilizers</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore quibusdam veniam beatae enim nemo ea possimus. Magni excepturi aliquam quasi aspernatur harum fuga laborum, perspiciatis impedit delectus, nam ipsam.
+                    </p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem id veritatis repellendus. Neque, officiis.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="https://gumlet.assettype.com/swarajya%2F2016-02%2F35c371ea-372a-481d-b588-2b9e5ed92d0f%2Ffertilizers.jpg?w=1200&auto=format%2Ccompress&ogImage=true" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Question Accordian-->
+    <section id="questions"  class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Frequently asked questions
+            </h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!--item 1-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" >
+                        Is there any expiry date of fertilizers?
+
+                    </button>
+                  </h2>
+                  <div id="question-one" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                    <div class="accordion-body">
+                        There is no expiry date of chemical fertilizers. However, in case of imported Fertilizers, the container (bag) has. indication regarding month and year of Manufacture/import.
+
+
+                    </div>
+                  </div>
+                </div>
+                <!--item 2-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" >
+                        What is the Retention Price Scheme?
+                      </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                        The Retention Price Scheme (RPS) for fertilizer Industry introduced from 1.11.1977 and remained in force till 31.3.2003. Under the RPS Retention Price was fixed for each unit by the Govt. The difference between the Retention Price of Urea and the maximum retail price of urea was paid as subsidy.
+
+
+                      </div>
+                    </div>
+                  </div>
+                <!--item 3-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" >
+                        How quality control is ensured for fertilizers?
+                      </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                        The FCO has laid down fertilizer-wise detailed specifications and no fertilizer, not meeting the said specification, can be sold in the country for agricultural purposes. It also lays down detailed procedure for sampling and analysis of each fertilizer. The Central Fertilizer Quality Control & Training Institute CFQC&TI), Faridabad and its four Regional Fertilizer Control Laboratories (RFCL) under the Department of Agriculture & Co-operation (DAC) take samples of imported fertilizers at the discharge port for analysis thereof. The States also have their own State notified quality control laboratories that analyse samples taken from field (warehouses/dealers/retailers) as well as from the manufacturing plants. Based on the analysis, the labs declare samples as standard or non-standard in terms of specifications laid down in the FCO. The sub-standard quantities are arrived at as per procedure laid down in the FCO and the copies of analysis report are sent to DAC, DOF, the concerned manufacturer/importer etc. No subsidy is payable on quantities declared as sub-standard.
+                      </div>
+                    </div>
+                  </div>
+                <!--item 4-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four" >
+                        Whether subsidy is payable to fertilizer mixture manufacturers?
+
+                      </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                        No subsidy is payable on mixture fertilizers. However, subsidy is paid on urea and decontrolled P&K fertilizers covered under the Concession Scheme if sold to the manufacturers of mixture fertilizers registered under FCO.
+
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-success">
+        <div class="container">
+            <h2 class="text-center text-white">
+                Our Expert
+            </h2>
+            <p class="lead text-center text-white mb-5">
+              Expert
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgoGP6d4Te8LbYb8kLk1k3HiMA0CIo1BEERapxDLEtU7Di4znOD8L7CAgAPZdzNxnpqt8&usqp=CAU" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Shivam Gupta</h3>
+                            <p class="card-text">Supervisor</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://png.pngitem.com/pimgs/s/312-3127637_round-taylor-kevin-hd-png-download.png" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Ohm</h3>
+                            <p class="card-text">Expert</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://png.pngitem.com/pimgs/s/312-3127637_round-taylor-kevin-hd-png-download.png"rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Kartik Wadhwa</h3>
+                            <p class="card-text">Expert</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://png.pngitem.com/pimgs/s/312-3127637_round-taylor-kevin-hd-png-download.png" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Diwanshu Chandila</h3>
+                            <p class="card-text">Expert</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSphqr8UCDYwvnxJcL9dWOQtfbY_BM7ARTlUw&usqp=CAU" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Abhinav Jain</h3>
+                            <p class="card-text">Expert</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact and map-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> UPES Bidholi
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Contact Number:</span> 6511489615
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span> papakepare@gmail.com
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id='map' style='width: 400px; height: 300px;'></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Kisan Sewa</p>
+            
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle-fill h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Enrollment Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill this form and we'll reach out to you</p>
+          <form>
+            <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                    First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name">
+            </div>
+            <div class="mb-3">
+                <label for="last-name" class="col-form-label">
+                    Last Name:
+                </label>
+                <input type="text" class="form-control" id="last-name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="col-form-label">
+                    Email:
+                </label>
+                <input type="text" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="col-form-label">
+                    Phone:
+                </label>
+                <input type="text" class="form-control" id="phone">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoia2FydGlrd2FkaHdhIiwiYSI6ImNsMTB6dDFqMDJpaXQzaW5taXZ1d2h1bnUifQ.wUKtCN5hupHFtDlYTPmkDA';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982 , 42.35725],
+        zoom: 18
+        });
+    </script>
+</body>
+</html>

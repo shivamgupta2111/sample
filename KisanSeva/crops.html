@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <title>Kisan Sewa-Crop Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark py-3 fixed-top">
+        <div class="container">
+
+            <a href="#" class="navbar-brand">Crop Information</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link text-white">Crops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link text-white">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link text-white">Our Team</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="crops_hindi.html">हिन्दी</a>
+            <a href="#" class="p-3">English</a>
+        </div>
+    </nav>
+    <!-- showcase -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+          <div class="container">
+              <div class="d-sm-flex align-items-center justify-content-between">
+                  <div>
+                      <h1><span class="text-warning">Crop Information</span></h1>
+                      <p class="lead my-3">You will learn about different crops grown, their types and which one are currently the best selling.</p>
+                      <button class="btn btn-primary btn-lg mx-1" 
+                      data-bs-toggle="modal" 
+                      data-bs-target="#enroll">
+                          Start learning
+                      </button>
+                  </div>
+                  <img class="img-fluid w-50 d-none d-sm-block" src="https://blog.agribazaar.com/wp-content/uploads/2021/11/16_2-col_MJR240818_spring_wheat_2.jpg" alt="">
+              </div>
+          </div>
+    </section>
+    <!--newsletter-->
+    <section class="bg-success text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Sign up for regular information</h3>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter email">
+                    <button class="btn btn-dark btn-lg" type="button">Submit</button>
+                  </div>
+                  
+            </div>
+        </div>
+    </section>
+    <!--boxes-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Wheat
+                            </h3>
+                            
+                            <a href="#learn" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Rice
+                            </h3>
+                            
+                            <a href="#foundation" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Apple
+                            </h3>
+
+                            <a href="#breeder"  class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Walnut
+                            </h3>
+                            
+                            <a href="#certified" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Learn Section-->
+    <section id="learn" class="p-5 bg-success bg-opacity-50">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+                <div class="col-md p-5">
+                    <h2>Wheat</h2>
+                    <p class="lead">
+                        High source of protein, Good source of fibre , Wide adaptability can be grown in tropical and sub-tropical area also in temperate zone , Wheat can tolerate severe cold and snow and resume its growth with setting in warm weather in spring season.It can be grown from sea level to as high 3300m . <br> Cultivation : moist , cool weather.  
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="foundation" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Rice</h2>
+                    <p class="lead">
+                        The rice plant is 2-6 ft tall with a round jointed long pointed leaves and edible seeds.
+Rice – when covered with brown hull is known as paddy. <br>
+Nutrient values and health benefits of rice :- <br>
+Good source of energy <br>
+Cholesterol free food <br> 
+Helps in blood pressure management <br>
+Cancer prevention <br>
+Prevent skin problems <br>
+Supports cardiovascular health <br>
+Good source of niacin , vitamin D , Calcium , fiber , iron , thiamine and riboflavin
+
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+                <iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="breeder" class="p-5 bg-success bg-opacity-50">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+                <div class="col-md p-5">
+                    <h2>Sugarcane</h2>
+                    <p class="lead">
+                        Climate condition for sugarcane production : <br>
+                        1.	Warm growing season with high incidence of solar radiation and adequate moisture (rainfall) – the plant uses from 148 to 300 g of water to produce 1.0g of dry substance.<br>
+                        2.	A fairly dry , sunny and cool (but frost free season) for ripening and harvesting . 
+                        Moisture percentage drops steadily throughout the life of the sugar cane plant , from 83% in very young cane to 71% in mature cane , meanwhile , sucrose grows from less than 10 to more than 45% of the dry weight.
+                                           </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certified" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Walnut</h2>
+                    <p class="lead">
+                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, modi dolore quidem quia veritatis, necessitatibus sequi earum soluta in fugiat laudantium quaerat consequatur aperiam exercitationem eligendi iusto ea reiciendis explicabo.                </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+                <iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Question Accordian-->
+    <section id="questions"  class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Frequently asked questions
+            </h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!--item 1-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" >
+                        How much moisture content should be maintained during storage to prevent from attack of insect
+                        pests ?
+                    </button>
+                  </h2>
+                  <div id="question-one" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                    <div class="accordion-body">
+                        The moisture content should be less than 8 %
+                    </div>
+                  </div>
+                </div>
+                <!--item 2-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" >
+                        What is the harvest index for rice?
+                      </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                        When 80% of the panicles turn straw colour, the crop is ready for harvest.  Even at this stage, the leaves of some of the varieties may remain green.
+                        Confirm maturity by selecting the most mature tiller and dehusk a few grains. If the rice is clear and firm, it is in hard dough stage.
+                      </div>
+                    </div>
+                  </div>
+                <!--item 3-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" >
+                        What is the ideal sowing time for Wheat?
+                      </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                        Ideal sowing time is 15th October to 1st week of November. Sowing must be completed within the first fortnight of November.
+                      </div>
+                    </div>
+                  </div>
+                <!--item 4-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four" >
+                        Is there any sugarcane variety with drought tolerant characteristics ?
+                      </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                        Variety Co C (Sc)22 is a high yielding drought tolerant variety
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+
+    <!--team-->
+    <section id="instructors" class="p-5 bg-success">
+        <div class="container">
+            <h2 class="text-center text-white">
+                Our Team
+            </h2>
+            <p class="lead text-center text-white mb-5">
+                Team Members
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgoGP6d4Te8LbYb8kLk1k3HiMA0CIo1BEERapxDLEtU7Di4znOD8L7CAgAPZdzNxnpqt8&usqp=CAU" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Shivam Gupta</h3>
+                            <p class="card-text">Papa ka Para</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="data:image/jpeg;base64,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" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Ohm</h3>
+                            <p class="card-text">Papa ka Para</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://png.pngitem.com/pimgs/s/75-758282_walter-circle-person-photo-in-circle-hd-png.png" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Kartik Wadhwa</h3>
+                            <p class="card-text">Papa ka Para</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://png.pngitem.com/pimgs/s/312-3127637_round-taylor-kevin-hd-png-download.png" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Diwanshu Chandila</h3>
+                            <p class="card-text">Papa ka Para</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSphqr8UCDYwvnxJcL9dWOQtfbY_BM7ARTlUw&usqp=CAU" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Abhinav Jain</h3>
+                            <p class="card-text">Papa ka Para</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact and map-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> UPES Bidholi
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Contact Number:</span> 6511489615
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span> papakepare@gmail.com
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Kisan Sewa</p>
+            
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle-fill h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Enrollment Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill this form and we'll reach out to you</p>
+          <form>
+            <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                    First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name">
+            </div>
+            <div class="mb-3">
+                <label for="last-name" class="col-form-label">
+                    Last Name:
+                </label>
+                <input type="text" class="form-control" id="last-name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="col-form-label">
+                    Email:
+                </label>
+                <input type="text" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="col-form-label">
+                    Phone:
+                </label>
+                <input type="text" class="form-control" id="phone">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoia2FydGlrd2FkaHdhIiwiYSI6ImNsMG5ucDB5cDBjMzgzY216czI2dmt0YjgifQ.HU1eqM3-8fIkJX0S_k8k2w';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-71.060982 , 42.35725],
+            zoom: 18
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Kisan Sewa-Seeds</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .nav{
+      margin-top: 45px;
+      
+       } 
+       .header {
+      background-color: #F1F1F1;
+      text-align: center;
+      padding: 20px;
+    }
+  li a {
+    font-size: small;
+      display: block;
+      color: #000;
+      /* padding: 8px 16px; */
+      text-decoration: none;
+    }
+    /* Change the link color on hover */
+  li a:hover {
+      background-color: #555;
+      color: white;
+    }
+    .lang{
+    position: fixed;
+    margin-top: 150px;
+  }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+ <section>
+    <div class="w3-display-container" bg-dark>
+      <h1 class="text-center bg-success text-white fixed-top">Kisan Seva</h1>
+      <!-- <a class="container" href="#">
+      <img src="Image\86accbea31b719dea35425f4e260b2c3.jpg" class="rounded-circle float-start" width="60" height="60">
+      </a> -->
+      <!-- <img src="Image\86accbea31b719dea35425f4e260b2c3.jpg" class="rounded-circle float-start" width="60" height="60"> -->
+    </div>
+    </section>
+    
+    <section>
+    <div>
+      <br>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav fixed-top">
+      
+          <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!-- <div class="container-fluid"> -->
+                  <a class="navbar-brand" href="#">
+                    <img src="Image\86accbea31b719dea35425f4e260b2c3.jpg" alt="Logo" style="width:50px;"
+                          class="rounded-pill">
+                  </a>
+    
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html"><i
+                                  class="fa fa-fw fa-home"></i>home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page"
+                              href="Crop Information.html">Crop Information</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Farm Machinery.html">Farm
+                              Machinery</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page"
+                              href="#">organic Faming</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="seeds.html">Seeds</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page"
+                              href="Fertilizers.html">Fertilizers</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page"
+                              href="Government Schemes.html">Government Schemes</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Water Supply.html">Water
+                              Supply</a>
+                      </li>
+    
+    
+    
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="livestock-master\index.html">Live Stock</a>
+                    </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Mandi rate.html">Mandi
+                              rate</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Sell.html">Sell</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Purchase.html">Puchase</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="ExpertProfile\index.html"><i
+                                  class="fa fa-fw fa-user"></i>Expert Advise</a>
+                      </li>
+                      
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="qa\index.php">QA</a>
+                  </li>
+                      <!-- <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="Manufacturers.html">Manufacturers</a>
+                      </li> -->
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Support.html"><i
+                                  class="fa fa-fw fa-headphones"></i>Support</a>
+                      </li>
+                    
+    
+    
+                  </ul>
+                  <!-- </div> -->
+    
+              </div>
+          </div>
+          <!-- Search -->
+     <nav class="navbar navbar-light bg-light justifiy-content-between">
+      <div class="container">
+          
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          </div>
+        </nav>
+      </nav>
+      
+    </div>
+    </section>
+  
+    <!-- Language -->
+    <section class="bg-success text-light p-3 fixed-top lang">
+      <div class="container">
+        <div class="langwrap">
+          <a href="#" language='english'>EN</a>
+          <a href="seeds_hindi.html" language='hindi'>
+            हिन्दी</a>
+           
+        </div>
+      </div>
+      </section>
+      <br><br><br><br><br>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark py-3">
+        <div class="container">
+
+            <a href="#" class="navbar-brand">Seeds</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link text-white">About Seeds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link text-white">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link text-white">Our Team</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="seeds_hindi.html">हिन्दी</a>
+            <a href="#" class="p-3">English</a>
+        </div>
+    </nav>
+    <!-- showcase -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+          <div class="container">
+              <div class="d-sm-flex align-items-center justify-content-between">
+                  <div>
+                      <h1>Types of <span class="text-warning">Seeds</span></h1>
+                      <p class="lead my-3">There are four major different classes of seeds in India namely nucleus seed, breeder seed, foundation seed, and certified seed.</p>
+                      <button class="btn btn-primary btn-lg mx-1" 
+                      data-bs-toggle="modal" 
+                      data-bs-target="#enroll">
+                          Start learning
+                      </button>
+                  </div>
+                  <img class="img-fluid w-50 d-none d-sm-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5W6twDoFhtmSNLb6vCFjmEWPNU_C252NFwQ&usqp=CAU" alt="">
+              </div>
+          </div>
+    </section>
+    <!--newsletter-->
+ 
+    <!--boxes-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Nucleus Seeds
+                            </h3>
+                            
+                            <a href="#learn" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Foundation Seeds
+                            </h3>
+                            
+                            <a href="#foundation" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Breeder Seeds
+                            </h3>
+
+                            <a href="#breeder"  class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Certified Seeds
+                            </h3>
+                            
+                            <a href="#certified" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Learn Section-->
+    <section id="learn" class="p-5 bg-success bg-opacity-50">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4JvFMFQNg3GC18ViJpc4y7U5sGCYrgNLokw&usqp=CAU" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Nucleus Seeds</h2>
+                    <p class="lead">
+                        The nucleus seed is genetically cent percent pure and does not contain other physical impurities. The nucleus seed is produced strictly under isolation so as to avoid both genetically and physical contamination. Nucleus seed should retain original vigour of the variety or parental line.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="foundation" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Foundation Seeds</h2>
+                    <p class="lead">
+                        The progeny of breeder seed produced by recognized seed producing agencies in public and private sector, under supervision of seed certification agencies in such a way that its quality is maintained according to prescribed field ad seed standards. A white colour certificate is issued for foundation seed by seed certification agencies.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="data:image/jpeg;base64,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" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="breeder" class="p-5 bg-success bg-opacity-50">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4JvFMFQNg3GC18ViJpc4y7U5sGCYrgNLokw&usqp=CAU" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Breeder Seeds</h2>
+                    <p class="lead">
+                        The progeny of nucleus seed multiplied in large area as per indent of Department of Agriculture and Cooperation (DOAC), Ministry of Agriculture, Government of India, under supervision of plant breeder / institute / SAUs and monitored by a committee consisting of the representatives of state seed certification agency, national / state seed corporations, ICAR nominee and concerned breeder. This is also hundred percent physical and genetic pure seed for production of foundation seed. A golden yellow colour certificate is issued for this category of seed by the producing breeder.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certified" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Certified Seeds</h2>
+                    <p class="lead">
+                        The progeny of foundation seed produced by registered seed growers under supervision of seed certification agencies to maintain the seed quality as per minimum seed certification standards. A blue colour certificate is issued by seed certification agency for this category of seed.                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="data:image/jpeg;base64,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" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Question Accordian-->
+    <section id="questions"  class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Frequently asked questions
+            </h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!--item 1-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" >
+                    What seeds are the best-selling in uttrakhand?
+                    </button>
+                  </h2>
+                  <div id="question-one" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                    <div class="accordion-body">
+                        Most seeds sold are Wheat,Apple,Rice and Walnut.
+                    </div>
+                  </div>
+                </div>
+                <!--item 2-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" >
+                        Where/how to store seeds for flowers and vegetables?
+                      </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                        Seeds retain their viability when stored at cool
+                        temperatures, lower humidity and reduced light exposure. Begin by harvesting
+                        high-quality seeds from healthy produce. Next, be sure to thoroughly dry the
+                        seeds, then seal them in an airtight container. A jar or zippered plastic bag works well.
+                        Next, place the sealed container in the refrigerator or freeze them for storage. Be sure to label the seeds to avoid mix-ups in the
+                        spring. It’s advisable to use seeds as soon as possible for the quickest
+                        germination rate.
+                      </div>
+                    </div>
+                  </div>
+                <!--item 3-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" >
+                        Which are the agencies that can produce certified seeds?
+
+
+                      </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                        Anybody willing to come forward to produce certified seed can produce certified seed.  At present State Seeds Corporations, National Seeds Corporation, State Farm Corporation of India, State Departments of Agriculture, Private Companies, Cooperatives and individual farmers are producing certified seed.
+
+
+                      </div>
+                    </div>
+                  </div>
+                <!--item 4-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four" >
+                        What is Seed Replacement Rate?
+
+
+                      </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                        Seed Replacement Rate is the percentage of area sown out of total area of crop planted in the season by using certified/quality seeds other than the farm saved seed. 
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+
+    <!--team-->
+    <section id="instructors" class="p-5 bg-success">
+        <div class="container">
+            <h2 class="text-center text-white">
+                Our Expert
+            </h2>
+            <p class="lead text-center text-white mb-5">
+              Expert
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgoGP6d4Te8LbYb8kLk1k3HiMA0CIo1BEERapxDLEtU7Di4znOD8L7CAgAPZdzNxnpqt8&usqp=CAU" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Shivam Gupta</h3>
+                            <p class="card-text">Supervisor</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://png.pngitem.com/pimgs/s/312-3127637_round-taylor-kevin-hd-png-download.png" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Ohm</h3>
+                            <p class="card-text">Expert</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://png.pngitem.com/pimgs/s/312-3127637_round-taylor-kevin-hd-png-download.png"rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Kartik Wadhwa</h3>
+                            <p class="card-text">Expert</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://png.pngitem.com/pimgs/s/312-3127637_round-taylor-kevin-hd-png-download.png" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Diwanshu Chandila</h3>
+                            <p class="card-text">Expert</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSphqr8UCDYwvnxJcL9dWOQtfbY_BM7ARTlUw&usqp=CAU" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Abhinav Jain</h3>
+                            <p class="card-text">Expert</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact and map-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> UPES Bidholi
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Contact Number:</span> 6511489615
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span> papakepare@gmail.com
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Kisan Sewa</p>
+            
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle-fill h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Enrollment Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill this form and we'll reach out to you</p>
+          <form>
+            <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                    First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name">
+            </div>
+            <div class="mb-3">
+                <label for="last-name" class="col-form-label">
+                    Last Name:
+                </label>
+                <input type="text" class="form-control" id="last-name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="col-form-label">
+                    Email:
+                </label>
+                <input type="text" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="col-form-label">
+                    Phone:
+                </label>
+                <input type="text" class="form-control" id="phone">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoia2FydGlrd2FkaHdhIiwiYSI6ImNsMG5ucDB5cDBjMzgzY216czI2dmt0YjgifQ.HU1eqM3-8fIkJX0S_k8k2w';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-71.060982 , 42.35725],
+            zoom: 18
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <title>Kisan Sewa-Fertilizers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark py-3 fixed-top">
+        <div class="container">
+
+            <a href="#" class="navbar-brand">Fertilizers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link text-white">About Fertilizers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link text-white">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link text-white">Our Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- showcase -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+          <div class="container">
+              <div class="d-sm-flex align-items-center justify-content-between">
+                  <div>
+                      <h1>Types of <span class="text-warning">Fertilizers</span></h1>
+                      <p class="lead my-3">There are  four different classes of Fertilizers in India namely inorganic fertilizers, organic fertilizers, nitrogen fertilizers, phosphorous fertilizers.</p>
+                      <button class="btn btn-primary btn-lg mx-1" 
+                      data-bs-toggle="modal" 
+                      data-bs-target="#enroll">
+                          Start learning
+                      </button>
+                  </div>
+                  <img class="img-fluid w-50 d-none d-sm-block mt-5" src="https://www.fertilizer-machine.net/wp-content/uploads/2018/06/types-of-fertilizer.jpg" alt="">
+              </div>
+          </div>
+    </section>
+    <!--newsletter-->
+    <section class="bg-success text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Sign up for regular information</h3>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter email">
+                    <button class="btn btn-dark btn-lg" type="button">Submit</button>
+                  </div>
+                  
+            </div>
+        </div>
+    </section>
+    <!--boxes-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Inorganic Fertilizers
+                            </h3>
+                            <p class="card-text">
+                                suuuuuuiiii
+                            </p>
+                            <a href="#" class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Organic Fertilizers
+                            </h3>
+                            <p class="card-text">
+                                suuuuuuuiii
+                            </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Nitrogen Fertilizers
+                            </h3>
+                            <p class="card-text">
+                                suuuuuiiiii
+                            </p>
+                            <a href="#" class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Phosphorous Fertilizers
+                            </h3>
+                            <p class="card-text">
+                                suuuuuuuuiii
+                            </p>
+                            <a href="#" class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Learn Section-->
+    <section id="learn" class="p-5 bg-success">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="https://www.ugaoo.com/knowledge-center/wp-content/uploads/2017/07/shutterstock_301313486.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn the fundamentals</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore quibusdam veniam beatae enim nemo ea possimus. Magni excepturi aliquam quasi aspernatur harum fuga laborum, perspiciatis impedit delectus, nam ipsam.
+                    </p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem id veritatis repellendus. Neque, officiis.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>More About Fertilizers</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore quibusdam veniam beatae enim nemo ea possimus. Magni excepturi aliquam quasi aspernatur harum fuga laborum, perspiciatis impedit delectus, nam ipsam.
+                    </p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem id veritatis repellendus. Neque, officiis.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="https://gumlet.assettype.com/swarajya%2F2016-02%2F35c371ea-372a-481d-b588-2b9e5ed92d0f%2Ffertilizers.jpg?w=1200&auto=format%2Ccompress&ogImage=true" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Question Accordian-->
+    <section id="questions"  class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Frequently asked questions
+            </h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!--item 1-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" >
+                    What Fertilizers are the best-selling in uttrakhand?
+                    </button>
+                  </h2>
+                  <div id="question-one" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                    <div class="accordion-body">
+                        No idea
+                    </div>
+                  </div>
+                </div>
+                <!--item 2-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" >
+                      question 2
+                      </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                          answer 2
+                      </div>
+                    </div>
+                  </div>
+                <!--item 3-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" >
+                      question 3
+                      </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                          answer 3
+                      </div>
+                    </div>
+                  </div>
+                <!--item 4-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four" >
+                      question 4
+                      </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                      <div class="accordion-body">
+                          answer 4
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+
+    <!--team-->
+    <section id="instructors" class="p-5 bg-success">
+        <div class="container">
+            <h2 class="text-center text-white">
+                Our Team
+            </h2>
+            <p class="lead text-center text-white mb-5">
+                Team Members
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFrsZvevKIn-byPXY5GPZCLzbmXsaA5vpZ5Q&usqp=CAU" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Shivam Gupta</h3>
+                            <p class="card-text">Papa ka Para</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4hpR5DranfYmZtsfPfGzXmWpkqmfcRRrNng&usqp=CAU" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Ohm</h3>
+                            <p class="card-text">Papa ka Para</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="data:image/jpeg;base64,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" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Kartik Wadhwa</h3>
+                            <p class="card-text">Papa ka Para</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="data:image/jpeg;base64,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" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Diwanshu Chandila</h3>
+                            <p class="card-text">Papa ka Para</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnAbRnAmNdReVdsFslydLq14Bx7yv7Cc8TvQ&usqp=CAU" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Abhinav Jain</h3>
+                            <p class="card-text">Papa ka Para</p>
+                            <a href="#"><i class="bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact and map-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> UPES Bidholi
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Contact Number:</span> 6511489615
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span> papakepare@gmail.com
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id='map' style='width: 400px; height: 300px;'></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Kisan Sewa</p>
+            
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle-fill h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Enrollment Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill this form and we'll reach out to you</p>
+          <form>
+            <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                    First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name">
+            </div>
+            <div class="mb-3">
+                <label for="last-name" class="col-form-label">
+                    Last Name:
+                </label>
+                <input type="text" class="form-control" id="last-name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="col-form-label">
+                    Email:
+                </label>
+                <input type="text" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="col-form-label">
+                    Phone:
+                </label>
+                <input type="text" class="form-control" id="phone">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoia2FydGlrd2FkaHdhIiwiYSI6ImNsMTB6dDFqMDJpaXQzaW5taXZ1d2h1bnUifQ.wUKtCN5hupHFtDlYTPmkDA';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982 , 42.35725],
+        zoom: 18
+        });
+    </script>
+</body>
+</html>

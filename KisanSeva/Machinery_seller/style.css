@@ -1,0 +1,23 @@
+.langwrap{
+    background: rgb(224, 127, 47);
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
+a{
+    text-transform: uppercase;
+    color: white;
+    padding: 0 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+a.active{
+    background: rgb(251, 255, 0);
+}
+
+.chose{
+    margin-left: 350px;
+    padding: 40px;
+    
+    width: 50%;
+}
